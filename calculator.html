@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: beige;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .continar{
+        background-color:black ;
+        padding:20px;
+        width: 300px;
+    border-radius: 20px;
+    height: 450px;
+    }
+    .calc-text{
+    margin-bottom: 10px;
+    padding-left: 10px;
+    }
+    .calc-text p{
+        width: 100%;
+        font-size:35px;
+        text-align:end;
+        color: white;
+        height:10px ;
+    }
+    button{
+        background: gray;
+        color: white;
+        font-size: 24px;
+        border: none;
+        border-radius: 70%;
+        height:55px;
+        width: 55px;
+   margin-top:12px 12px;
+    }
+    .button{ 
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-row-gap: 15px;
+        grid-column-gap: 10px;
+        margin-bottom:50% ;
+     }
+    .zaro-number{
+        grid-column: span 2;
+        width: 100%;
+        border-radius: 30px;
+
+    }
+    .operators{
+        background-color: orange;
+    }
+    .btn-first{
+        background: gray;
+        color: black;
+    }
+    .numbers{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+<body>
+  <div class="continar">
+    <div class="calc-text">
+        <p>2+2</p>
+    </div>
+    <div class="button">
+<button class="btn-first">AC</button>
+<button class="btn-first">DEL</button>
+<button class="btn-first">%</button>
+<button class="operators">/</button>
+<button class="numbers">7</button>
+<button class="numbers">8</button>
+<button class="numbers">9</button>
+<button class="operators">*</button>
+<button class="numbers">4</button>
+<button class="numbers">5</button>
+<button class="numbers">6</button>
+<button class="operators">-</button>
+<button class="numbers">1</button>
+<button class="numbers">2</button>
+<button class="numbers">3</button>
+<button class="operators">+</button>
+<button class="zaro-number">0</button>
+<button class="numbers">.</button>
+<button class="operators">=</button>
+    </div>
+  </div>  
+</body>
+</html>
